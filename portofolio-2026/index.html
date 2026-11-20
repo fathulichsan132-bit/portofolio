@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio 2026 - M FATCHUL ICHSAN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+  <!-- Canvas Efek Hujan -->
+  <canvas id="rainCanvas" class="rain-canvas"></canvas>
+
+
+  <!-- ==================== SECTION 1: COVER / HERO ==================== -->
+  <section id="home" class="slide slide-hero">
+    <div class="glow glow-right"></div>
+
+    <header class="top-bar">
+      <a href="#home" class="brand-logo" aria-label="Logo MFI">
+    <svg viewBox="0 0 64 64" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <text x="50%" y="52%"
+              dominant-baseline="middle"
+              text-anchor="middle"
+              fill="white"
+              font-size="21"
+              font-weight="bold"
+              font-family="Arial">
+            MFI
+        </text>
+
+    </svg>
+</a>
+    </header>
+
+    <div class="hero-main">
+      <div class="hero-red-pill">
+        <!-- FOTO HERO -->
+        <div class="photo-slot" data-label="Foto Hero (assets/foto-hero.jpeg)">
+          <img src="assets/foto-hero.jpeg" alt="M FATCHUL ICHSAN" class="editable-photo" />
+        </div>
+      </div>
+
+      <div class="hero-title-group">
+        <div class="hero-heading-row">
+          <h1 class="hero-title">PORTFOLIO</h1>
+          <span class="hero-year">2026</span>
+        </div>
+        <div class="hero-subtitle">
+          <span class="square-dot"></span>
+          <span>STUDENT</span>
+        </div>
+        <div id="react-typed-root"></div>
+      </div>
+    </div>
+
+    <!-- Menu Gaya Game Interaktif -->
+    <nav class="hero-menu" aria-label="Menu Utama">
+      <button type="button" id="btnStart" class="menu-btn active">START</button>
+      <button type="button" id="btnOptions" class="menu-btn">OPTIONS</button>
+      <button type="button" id="btnExit" class="menu-btn">EXIT</button>
+    </nav>
+  </section>
+
+  <!-- ==================== SECTION 2: PROFIL / ABOUT ME ==================== -->
+  <section id="profil" class="slide slide-profil">
+    <div class="glow glow-left"></div>
+    <div class="glow glow-bottom-right"></div>
+
+    <header class="top-bar nav-header">
+     <a href="#home" class="brand-logo" aria-label="Logo MFI">
+    <svg viewBox="0 0 64 64" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <text x="50%" y="52%"
+              dominant-baseline="middle"
+              text-anchor="middle"
+              fill="white"
+              font-size="21"
+              font-weight="bold"
+              font-family="Arial">
+            MFI
+        </text>
+
+    </svg>
+</a>
+
+      <nav class="pill-nav">
+        <a href="#profil" class="pill-link active" data-section="profil">PROFIL</a>
+        <a href="#project" class="pill-link" data-section="project">PROJECT</a>
+        <a href="#contact" class="pill-link" data-section="contact">CONTACT PERSON</a>
+      </nav>
+      <div class="nav-spacer"></div>
+    </header>
+
+    <div class="profil-grid">
+      <div class="profil-left">
+        <div class="intro-name">
+          <p class="hello-text">HELLO, I AM</p>
+          <h2 class="full-name">MUHAMMAD FATCHUL ICHSAN</h2>
+        </div>
+
+        <div class="profil-photo-wrapper">
+          <div class="cyan-backlight"></div>
+          <!-- FOTO PROFIL -->
+          <div class="photo-slot profil-slot" data-label="Foto Profil (assets/foto-profil.jpeg)">
+            <img src="assets/foto-profil.jpeg" alt="Foto Profil M FATCHUL ICHSAN" class="editable-photo" />
+          </div>
+        </div>
+      </div>
+
+      <div class="profil-right">
+        <div class="info-block">
+          <h3 class="section-heading">ABOUT ME</h3>
+          <p class="bio-text">
+           HI, I'M MUHAMMAD FATCHUL ICHSAN, A STUDENT FROM CLASS XII RPL 2 IN SMKN 2 MOJOKERTO. I'M PASSIONATE ABOUT TECHNOLOGY AND WEB DEVELOPMENT, ESPECIALLY FRONTEND DEVELOPMENT. MY DREAM IS TO BECOME A PROFESSIONAL FRONTEND DEVELOPER. I HAVE BASIC KNOWLEDGE OF ENGLISH AND CODING, AND I'M ALWAYS EXCITED TO LEARN NEW THINGS, IMPROVE MY SKILLS, AND GAIN MORE EXPERIENCE IN THE WORLD OF TECHNOLOGY.
+          </p>
+        </div>
+
+        <div class="info-block">
+          <h3 class="section-heading">SOFTWARE SKILLS</h3>
+          <div class="skills-row">
+
+<div class="skills-row">
+
+    <div class="skill-icon icon-vscode" title="VS Code">VS</div>
+
+    <div class="skill-icon icon-canva" title="Canva">C</div>
+
+    <div class="skill-icon icon-figma" title="Figma">F</div>
+
+    <div class="skill-icon icon-php" title="PHP">PHP</div>
+
+    <div class="skill-icon icon-laragon" title="Laragon">L</div>
+
+    <div class="skill-icon icon-claude" title="Claude">✳</div>
+
+</div>
+
+        <div class="edu-exp-grid">
+          <div class="info-block">
+            <h4 class="sub-heading">EDUCATION</h4>
+            <ul class="detail-list">
+              <li><span class="bullet-dot"></span> 2024 - 2026</li>
+              <li class="bold-item">SMKN 2 MOJOKERTO</li>
+              <li class="muted-item">Software Engineering(RPL)</li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4 class="sub-heading">EXPERIENCE</h4>
+            <ul class="detail-list">
+              <li class="bold-item">WEB DEVELOPMENT</li>
+              <li>Laravel & PHP Projects</li>
+              <li class="muted-item">Building websites, database systems, and responsive user interfaces.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-block language-block">
+          <h4 class="sub-heading">LANGUAGE (COMMUNICATION)</h4>
+          <div id="react-lang-bars"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- ==================== SECTION 3: RECAP PROJECT 2026 ==================== -->
+<section id="project" class="slide slide-project">
+
+    <div class="glow glow-top-left"></div>
+    <div class="glow glow-bottom-right"></div>
+
+    <header class="top-bar nav-header center-only">
+        <nav class="pill-nav">
+            <a href="#profil" class="pill-link" data-section="profil">PROFIL</a>
+            <a href="#project" class="pill-link active" data-section="project">PROJECT</a>
+            <a href="#contact" class="pill-link" data-section="contact">CONTACT PERSON</a>
+        </nav>
+    </header>
+
+    <div class="project-header">
+        <h2 class="recap-title">RECAP PROJECT</h2>
+        <span class="ai-badge">Sanzz AI</span>
+    </div>
+
+    <div class="bento-grid">
+
+        <!-- KOLOM 1 -->
+        <div class="bento-col">
+
+            <div class="bento-card card-tall photo-slot zoomable-card"
+                 data-title="PROJECT 01 — Laravel credit-app project"
+                 data-label="Project 1 (assets/project-1.png)">
+
+                <img src="assets/project-1.png"
+                     alt="Project 1"
+                     class="editable-photo" />
+
+            </div>
+
+            <!-- LOGO MFI -->
+            <div class="bento-logo-pair">
+
+                <!-- MFI DARK -->
+                <div class="logo-box dark-box" title="Monogram MFI Dark">
+
+                    <svg viewBox="0 0 64 64"
+                         width="38"
+                         height="38"
+                         fill="none">
+
+                        <text x="50%"
+                              y="52%"
+                              dominant-baseline="middle"
+                              text-anchor="middle"
+                              fill="white"
+                              font-size="21"
+                              font-weight="bold"
+                              font-family="Arial">
+                            MFI
+                        </text>
+
+                    </svg>
+
+                </div>
+
+                <!-- MFI LIGHT -->
+                <div class="logo-box light-box" title="Monogram MFI Light">
+
+                    <svg viewBox="0 0 64 64"
+                         width="38"
+                         height="38"
+                         fill="none">
+
+                        <text x="50%"
+                              y="52%"
+                              dominant-baseline="middle"
+                              text-anchor="middle"
+                              fill="#08131d"
+                              font-size="21"
+                              font-weight="bold"
+                              font-family="Arial">
+                            MFI
+                        </text>
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KOLOM 2 -->
+        <div class="bento-col">
+
+            <div class="bento-card card-short photo-slot zoomable-card"
+                 data-title="PROJECT 02 — Figma Ichsan online-shop"
+                 data-label="Project 2 (assets/project-2.png)">
+
+                <img src="assets/project-2.png"
+                     alt="Project 2"
+                     class="editable-photo" />
+
+            </div>
+
+            <div class="bento-card card-poster photo-slot zoomable-card"
+                 data-title="PROJECT 03 — Figma elearning"
+                 data-label="Project 3 (assets/project-3.png)">
+
+                <img src="assets/project-3.png"
+                     alt="Project 3"
+                     class="editable-photo" />
+
+            </div>
+
+        </div>
+
+
+        <!-- KOLOM 3 -->
+        <div class="bento-col">
+
+            <div class="bento-card card-short photo-slot zoomable-card"
+                 data-title="PROJECT 04 — Laravel siminlab project"
+                 data-label="Project 4 (assets/project-4.png)">
+
+                <img src="assets/project-4.png"
+                     alt="Project 4"
+                     class="editable-photo" />
+
+            </div>
+
+            <div class="bento-card card-poster photo-slot zoomable-card"
+                 data-title="PROJECT 05 — Study Laravel project"
+                 data-label="Project 5 (assets/project-5.png)">
+
+                <img src="assets/project-5.png"
+                     alt="Project 5"
+                     class="editable-photo" />
+
+            </div>
+
+        </div>
+
+
+        <!-- KOLOM 4 -->
+        <div class="bento-col bento-col-wide">
+
+            <div class="bento-top-split">
+
+                <div class="bento-card card-square photo-slot zoomable-card"
+                     data-title="PROJECT 06 — rental mobil project"
+                     data-label="Project 6 (assets/project-6.png)">
+
+                    <img src="assets/project-6.png"
+                         alt="Project 6"
+                         class="editable-photo" />
+
+                </div>
+
+                <div class="bento-card card-square photo-slot zoomable-card"
+                     data-title="PROJECT 07 — toko elektronik project"
+                     data-label="Project 7 (assets/project-7.png)">
+
+                    <img src="assets/project-7.png"
+                         alt="Project 7"
+                         class="editable-photo" />
+
+                </div>
+
+            </div>
+
+
+            <div class="bento-strip">
+                <span>
+                    SOFTWARE Engineering - UI/UX DESIGNER
+                </span>
+            </div>
+
+
+            <div class="bento-card card-wide-banner photo-slot zoomable-card"
+                 data-title="PROJECT 08 - Flutter coffeshop"
+                 data-label="Project 8 (assets/project-8.png)">
+
+                <img src="assets/project-8.png"
+                     alt="Project 8"
+                     class="editable-photo" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="react-stats-bar"></div>
+
+</section>
+
+  <!-- ==================== SECTION 4: CONTACT PERSON & THANK YOU ==================== -->
+  <section id="contact" class="slide slide-contact">
+    <div class="glow glow-bottom-left"></div>
+
+    <header class="top-bar nav-header center-only">
+      <nav class="pill-nav">
+        <a href="#profil" class="pill-link" data-section="profil">PROFIL</a>
+        <a href="#project" class="pill-link" data-section="project">PROJECT</a>
+        <a href="#contact" class="pill-link active" data-section="contact">CONTACT PERSON</a>
+      </nav>
+    </header>
+
+    <div class="contact-layout">
+      <div class="contact-left">
+        <div class="contact-profile-row">
+          <div class="circle-avatar-box">
+            <!-- FOTO CONTACT -->
+            <div class="circle-avatar photo-slot" data-label="Foto Contact (assets/foto-contact.png)">
+              <img src="assets/foto-contact.jpeg" alt="Yudha Pradana" class="editable-photo" />
+            </div>
+            <p class="avatar-caption">M FATCHUL ICHSAN<br><span>17</span></p>
+          </div>
+
+          <div class="social-list-box">
+            <h3 class="section-heading">CONTACT ME</h3>
+            <!-- GANTI URL HREF DENGAN LINK PROFIL SOSMED ASLI ANDA -->
+            <ul class="social-list">
+              <li>
+                <a href="https://instagram.com/sanzyyy78" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <span class="soc-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5"/>
+                      <circle cx="12" cy="12" r="4"/>
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <span>@sanzyyy78</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://tiktok.com/@sanzbro17" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <span class="soc-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48Z"/>
+                    </svg>
+                  </span>
+                  <span>@sanzbro17</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com/@SanzX762" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <span class="soc-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M23 12s0-3.85-.46-5.58a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.94 1.96c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96c.46-1.73.46-5.58.46-5.58ZM9.75 15.02V8.98L15.5 12l-5.75 3.02Z"/>
+                    </svg>
+                  </span>
+                  <span>SanzX762</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://pinterest.com/sanzz55" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <span class="soc-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M12 2a10 10 0 0 0-3.64 19.31c-.1-.82-.19-2.08.04-2.97l1.37-5.82s-.35-.7-.35-1.73c0-1.62.94-2.83 2.11-2.83 1 0 1.48.75 1.48 1.65 0 1-.64 2.5-.97 3.89-.28 1.16.58 2.11 1.73 2.11 2.08 0 3.68-2.19 3.68-5.35 0-2.8-2.01-4.76-4.88-4.76-3.32 0-5.27 2.49-5.27 5.07 0 1 .39 2.08.87 2.66.1.12.11.22.08.34l-.32 1.33c-.05.21-.17.26-.4.16-1.49-.69-2.42-2.87-2.42-4.62 0-3.76 2.73-7.21 7.88-7.21 4.14 0 7.35 2.95 7.35 6.89 0 4.11-2.59 7.42-6.19 7.42-1.21 0-2.35-.63-2.74-1.37l-.75 2.84c-.27 1.04-1 2.35-1.49 3.15A10 10 0 1 0 12 2Z"/>
+                    </svg>
+                  </span>
+                  <span>@sanzz55</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+       
+
+      <div class="contact-right">
+        <div class="thankyou-box">
+          <h2 class="thankyou-title">THANK YOU<br><span>2026</span></h2>
+        </div>
+
+        <svg class="filmstrip-deco" viewBox="0 0 420 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M60 220C140 120 260 75 420 65V145C290 150 205 180 165 220H60Z" fill="#e2e8f0" fill-opacity="0.14"/>
+          <path d="M85 220C160 132 270 90 420 82" stroke="#f8fafc" stroke-width="4" stroke-dasharray="10 10" opacity="0.55"/>
+          <path d="M145 220C195 168 285 135 420 128" stroke="#f8fafc" stroke-width="4" stroke-dasharray="10 10" opacity="0.55"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MODAL 1: OPTIONS (ALA GAME) ==================== -->
+  <div id="optionsModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="optionsTitle">
+    <div class="game-modal">
+      <div class="modal-header">
+        <h3 id="optionsTitle" class="modal-title">SYSTEM OPTIONS</h3>
+        <button type="button" class="modal-close" data-close="optionsModal" aria-label="Tutup">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="option-row">
+          <div>
+            <p class="option-label">UI SOUND EFFECTS (SFX)</p>
+            <span class="option-desc">Suara klik futuristik saat menekan tombol</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleSfx" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="option-row">
+          <div>
+            <p class="option-label">WEATHER (HUJAN & PETIR)</p>
+            <span class="option-desc">Animasi rintik hujan & petir atmosferik</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleRain" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+
+        <div class="option-row theme-option-row">
+          <div>
+            <p class="option-label">TEMA AKSEN CAHAYA</p>
+            <span class="option-desc">Pilih warna atmosfer portofolio</span>
+          </div>
+          <div class="theme-palette">
+            <button type="button" class="theme-swatch active" data-theme="cyan" data-name="CYAN NAVY" title="Cyan Navy" style="--swatch-color: #38bdf8;"></button>
+            <button type="button" class="theme-swatch" data-theme="crimson" data-name="CRIMSON DARK" title="Crimson Dark" style="--swatch-color: #f43f5e;"></button>
+            <button type="button" class="theme-swatch" data-theme="emerald" data-name="EMERALD MATRIX" title="Emerald Matrix" style="--swatch-color: #10b981;"></button>
+            <button type="button" class="theme-swatch" data-theme="purple" data-name="PURPLE NEBULA" title="Purple Nebula" style="--swatch-color: #c084fc;"></button>
+            <button type="button" class="theme-swatch" data-theme="amber" data-name="AMBER GOLD" title="Amber Gold" style="--swatch-color: #fbbf24;"></button>
+          </div>
+        </div>
+        <div class="theme-active-label" id="currentThemeName">CYAN NAVY</div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="game-btn primary" data-close="optionsModal">APPLY & CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL 2: EXIT CONFIRMATION ==================== -->
+  <div id="exitModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="exitTitle">
+    <div class="game-modal compact">
+      <div class="modal-header">
+        <h3 id="exitTitle" class="modal-title">EXIT PORTFOLIO?</h3>
+        <button type="button" class="modal-close" data-close="exitModal" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="exit-message">Apakah Anda yakin ingin mengakhiri sesi tampilan <strong>PORTFOLIO 2025</strong>?</p>
+      </div>
+      <div class="modal-footer dual">
+        <button type="button" id="confirmExitBtn" class="game-btn danger">YES, EXIT</button>
+        <button type="button" class="game-btn" data-close="exitModal">CANCEL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYAR GOODBYE SETELAH KONFIRMASI EXIT -->
+    <div id="goodbyeScreen" class="goodbye-screen hidden">
+    <div class="goodbye-box">
+      <p class="goodbye-lead">TERIMA KASIH SUDAH MELIHAT</p>
+      <p class="goodbye-name">PORTFOLIO — M FATCHUL ICHSAN</p>
+      <p class="goodbye-year">2026</p>
+      <button type="button" id="restartPortfolioBtn" class="game-btn primary">RESTART PORTFOLIO</button>
+    </div>
+  </div>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div id="lightboxModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-box">
+      <div class="modal-header">
+        <h3 id="lightboxTitle" class="modal-title">PROJECT PREVIEW</h3>
+        <button type="button" class="modal-close" data-close="lightboxModal" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="Preview" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="game-btn" data-close="lightboxModal">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="text/babel" src="react-components.jsx"></script>
+</body>
+</html>
